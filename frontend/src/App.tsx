@@ -1,11 +1,13 @@
-import { Box } from "@mui/material";
-import { Header } from "./components";
+import { CssBaseline } from "@mui/material";
+import { Form, Header } from "./components";
 
 const App = () => {
     return (
-        <Box>
+        <>
+            <CssBaseline />
             <Header />
-        </Box>
+            <Form />
+        </>
     );
 };
 
