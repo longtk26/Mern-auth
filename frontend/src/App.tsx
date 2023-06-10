@@ -1,12 +1,20 @@
+import { Routes, Route } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
-import { Form, Header } from "./components";
+import { Login, Header, Register } from "./components";
 
 const App = () => {
     return (
         <>
             <CssBaseline />
             <Header />
-            <Form />
+            <Routes>
+                <Route
+                    path="/"
+                    element={<Login title="Welcome to my mern project" />}
+                />
+                <Route path="/login" element={<Login title="Login" />} />
+                <Route path="/register" element={<Register />} />
+            </Routes>
         </>
     );
 };
